@@ -46,7 +46,7 @@ class GameController extends Controller
             'rows' => $grid['rows'],
             'columns' => $grid['columns'],
             'grid' => $grid['grid'],
-            'solved' => []
+            'solved' => $this->transformSolvedNullToEmptyString($grid['solved'])
         ]);
 
         $game->refresh();

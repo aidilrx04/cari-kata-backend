@@ -28,7 +28,9 @@ class StoreGameRequest extends FormRequest
             'grid.rows' => ['required', 'integer', 'min:1'],
             'grid.columns' => ['required', 'integer', 'min:1'],
             'grid.grid' => ['required', 'array', 'min:1'],
-            'grid.grid.*' => ['required', 'array', 'min:1']
+            'grid.grid.*' => ['required', 'array', 'min:1'],
+            'grid.solved' => ['required', 'array', 'min:1'],
+            'grid.solved.*' => ['required', 'array', 'min:1']
         ];
     }
 }
